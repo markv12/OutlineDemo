@@ -254,9 +254,7 @@ namespace UnityFBXExporter
 					{
 						if (!first)
 							tempObjectSb.Append(",");
-                        if(color.Key.r < 0) {
-                            Debug.Log("less that: " + color.Key.r);
-                        }
+
 						tempObjectSb.AppendFormat("{0},{1},{2},{3}", color.Key.r, color.Key.g, color.Key.b, color.Key.a);
 						first = false;
 					}
